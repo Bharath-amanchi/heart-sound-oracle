@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - HeartSound AI</title>
+    <meta name="description" content="Heart disease detection system login" />
+    <meta name="author" content="HeartSound AI" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">HeartSound AI</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dataset.html" class="nav-link">Dataset</a>
+          <a href="predict.html" class="nav-link">Predict</a>
+          <a href="login.html" class="nav-link active">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Page Content -->
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Welcome Back</h2>
+        <p>Login to access the prediction system</p>
+        
+        <form id="login-form" class="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Log In</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

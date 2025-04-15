@@ -1,26 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>heart-sound-oracle</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>HeartSound AI</title>
+    <meta name="description" content="Heart disease detection system using ML" />
+    <meta name="author" content="HeartSound AI" />
 
-    <meta property="og:title" content="heart-sound-oracle" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="HeartSound AI" />
+    <meta property="og:description" content="Heart disease detection using ML" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">HeartSound AI</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dataset.html" class="nav-link">Dataset</a>
+          <a href="predict.html" class="nav-link">Predict</a>
+          <a href="login.html" class="nav-link">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="container">
+      <div class="hero">
+        <h1>Heart Disease Detection System</h1>
+        <p>Advanced heart sound analysis using machine learning for accurate disease detection</p>
+      </div>
+      
+      <div class="features">
+        <div class="feature-card">
+          <h3>Analysis Parameters</h3>
+          <ul>
+            <li>• Diagnostic Heart Sound</li>
+            <li>• Best Heard Area</li>
+            <li>• Intensity (Loudness)</li>
+            <li>• Duration (Length)</li>
+            <li>• Pitch (Frequency)</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <h3>Clinical Factors</h3>
+          <ul>
+            <li>• Quality (Characteristics)</li>
+            <li>• Timing (Cardiac Cycle)</li>
+            <li>• Murmur Configuration</li>
+            <li>• Blood Pressure</li>
+            <li>• Heart Rate (BPM)</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <h3>Patient Data</h3>
+          <ul>
+            <li>• Age</li>
+            <li>• Gender</li>
+            <li>• Risk Level</li>
+            <li>• Availability-Diagnosis</li>
+            <li>• Medical History</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

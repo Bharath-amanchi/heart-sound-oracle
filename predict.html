@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict - HeartSound AI</title>
+    <meta name="description" content="Heart disease prediction system" />
+    <meta name="author" content="HeartSound AI" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">HeartSound AI</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dataset.html" class="nav-link">Dataset</a>
+          <a href="predict.html" class="nav-link active">Predict</a>
+          <a href="login.html" class="nav-link">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Predict Page Content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Disease Prediction</h1>
+        <p>Enter patient data to receive an ML-powered prediction</p>
+      </div>
+      
+      <div class="prediction-container">
+        <form id="prediction-form" class="prediction-form">
+          <div class="form-group">
+            <label for="diagnostic-sound">Diagnostic Heart Sound (1-5):</label>
+            <input type="number" id="diagnostic-sound" min="1" max="5" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="duration">Duration (sec):</label>
+            <input type="number" id="duration" min="1" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="quality">Quality (1-5):</label>
+            <input type="number" id="quality" min="1" max="5" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="timing">Timing (1-5):</label>
+            <input type="number" id="timing" min="1" max="5" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="murmur">Murmur Configuration (1-5):</label>
+            <input type="number" id="murmur" min="1" max="5" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="availability">Availability-Diagnosis (0/1):</label>
+            <select id="availability">
+              <option value="0">0 - Not Available</option>
+              <option value="1">1 - Available</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="blood-pressure">Blood Pressure (systolic/diastolic):</label>
+            <input type="text" id="blood-pressure" placeholder="120/80" required pattern="[0-9]+/[0-9]+">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        
+        <div id="result-container" class="result-container hidden">
+          <h3>Prediction Result</h3>
+          <div id="prediction-result"></div>
+          <div id="risk-level"></div>
+          <button id="new-prediction" class="btn btn-secondary">New Prediction</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="predict.js"></script>
+  </body>
+</html>

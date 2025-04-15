@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataset - HeartSound AI</title>
+    <meta name="description" content="Heart disease detection system dataset" />
+    <meta name="author" content="HeartSound AI" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">HeartSound AI</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dataset.html" class="nav-link active">Dataset</a>
+          <a href="predict.html" class="nav-link">Predict</a>
+          <a href="login.html" class="nav-link">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dataset Page Content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Heart Sound Dataset</h1>
+        <p>Explore our comprehensive dataset of heart sound recordings and analysis</p>
+      </div>
+      
+      <div class="dataset-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Diagnostic Sound</th>
+              <th>Duration</th>
+              <th>Quality</th>
+              <th>Timing</th>
+              <th>Risk Level</th>
+              <th>Diagnosis</th>
+            </tr>
+          </thead>
+          <tbody id="dataset-table-body">
+            <!-- Data will be loaded dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="dataset.js"></script>
+  </body>
+</html>
